@@ -1,0 +1,33 @@
+# ===== Secrets / credentials =====
+# Google Cloud service account key (grants access to the Dialogflow project)
+backend/dialogflow-key.json
+*-key.json
+*credentials*.json
+# Any downloaded service account key keeps the "<project-id>-<hash>.json" name
+jiayi-chatbot-for-food-de-qfot-*.json
+# Environment variables (DB password, etc.)
+.env
+.env.*
+!.env.example
+# ngrok config may contain the authtoken
+ngrok.yml
+
+# ===== Binaries =====
+ngrok.exe
+ngrok
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# ===== Editor / OS =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Original Dialogflow export (contains secondaryKey); the committed zip is sanitized
+*.local.zip

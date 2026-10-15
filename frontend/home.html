@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pandeyji Eatery</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+    <header>
+        <nav>
+            <a href="#home">HOME</a> |
+            <a href="#menu">MENU</a> |
+            <a href="#location">LOCATION</a> |
+            <a href="#aboutus">ABOUT US</a> |
+            <a href="#contactus">CONTACT US</a>
+        </nav>
+    </header>
+
+    <section id="home">
+		<img src="banner.jpg" alt="Pandeyji Eatery banner">
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="grid-container">
+        <img src="menu1.jpg" alt="Menu item 1">
+        <img src="menu2.jpg" alt="Menu item 2">
+        <img src="menu3.jpg" alt="Menu item 3">
+    </div>
+    </section>
+
+    <section id="location">
+        <h2>Location</h2>
+        <p>38 Patli Gali, Mumbai</p>
+    </section>
+
+    <section id="contactus">
+        <h2>Contact Us</h2>
+        <p>Got questions? Want to place an order? Call us at +91791234567 or email us at info@atliqfastfood.com</p>
+    </section>
+	</div>
+
+    <!-- 聊天窗口：消息发给后端 /chat，后端再调用 Dialogflow -->
+    <button id="chat-toggle" aria-label="Open chat">💬</button>
+    <div id="chat-box" hidden>
+        <div id="chat-header">
+            <span>Pandeyji Eatery</span>
+            <button id="chat-close" aria-label="Close chat">×</button>
+        </div>
+        <div id="chat-messages"></div>
+        <form id="chat-form">
+            <input id="chat-input" type="text" placeholder="Type a message..." autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
